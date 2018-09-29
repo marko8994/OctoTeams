@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56200BE5215FFFB80087C2D7 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A0E7C1215EFAF300904E08 /* MockData.json */; };
 		566F6AD0215D3A0100A268ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6ACF215D3A0100A268ED /* AppDelegate.swift */; };
 		566F6AD5215D3A0100A268ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566F6AD3215D3A0100A268ED /* Main.storyboard */; };
 		566F6AD8215D3A0100A268ED /* OctoTeams.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 566F6AD6215D3A0100A268ED /* OctoTeams.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 		566F6B03215D3FBB00A268ED /* OctoTeamScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B02215D3FBB00A268ED /* OctoTeamScreen.swift */; };
 		566F6B05215D42BE00A268ED /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B04215D42BE00A268ED /* MemberCell.swift */; };
 		566F6B07215D443300A268ED /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B06215D443300A268ED /* TeamMember.swift */; };
+		56A0E7C3215EFD4400904E08 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0E7C2215EFD4400904E08 /* JsonParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		566F6B02215D3FBB00A268ED /* OctoTeamScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoTeamScreen.swift; sourceTree = "<group>"; };
 		566F6B04215D42BE00A268ED /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
 		566F6B06215D443300A268ED /* TeamMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
+		56A0E7C1215EFAF300904E08 /* MockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
+		56A0E7C2215EFD4400904E08 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +107,12 @@
 		566F6ACE215D3A0100A268ED /* OctoTeams */ = {
 			isa = PBXGroup;
 			children = (
+				56A0E7C1215EFAF300904E08 /* MockData.json */,
 				566F6ACF215D3A0100A268ED /* AppDelegate.swift */,
 				566F6B02215D3FBB00A268ED /* OctoTeamScreen.swift */,
 				566F6B04215D42BE00A268ED /* MemberCell.swift */,
 				566F6B06215D443300A268ED /* TeamMember.swift */,
+				56A0E7C2215EFD4400904E08 /* JsonParser.swift */,
 				566F6AD3215D3A0100A268ED /* Main.storyboard */,
 				566F6AD9215D3A0400A268ED /* Assets.xcassets */,
 				566F6ADB215D3A0400A268ED /* LaunchScreen.storyboard */,
@@ -239,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				566F6ADD215D3A0400A268ED /* LaunchScreen.storyboard in Resources */,
+				56200BE5215FFFB80087C2D7 /* MockData.json in Resources */,
 				566F6ADA215D3A0400A268ED /* Assets.xcassets in Resources */,
 				566F6AD5215D3A0100A268ED /* Main.storyboard in Resources */,
 			);
@@ -267,6 +274,7 @@
 			files = (
 				566F6AD8215D3A0100A268ED /* OctoTeams.xcdatamodeld in Sources */,
 				566F6AD0215D3A0100A268ED /* AppDelegate.swift in Sources */,
+				56A0E7C3215EFD4400904E08 /* JsonParser.swift in Sources */,
 				566F6B03215D3FBB00A268ED /* OctoTeamScreen.swift in Sources */,
 				566F6B07215D443300A268ED /* TeamMember.swift in Sources */,
 				566F6B05215D42BE00A268ED /* MemberCell.swift in Sources */,

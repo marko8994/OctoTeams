@@ -8,13 +8,25 @@
 
 import Foundation
 
-public class TeamMember {
+public class TeamMember: Codable {
 
-    var name: String
+    var MemberUid: String?
+    var MemberName: String?
+    var MemberImageURL: String?
+    var MemberTeam: String?
+    var MemberPosition: String?
+    var MemberTitle: String?
+    var MemberExperience: String?
+
     
-    init(name: String) {
-        self.name = name
-    
+    init(uid: String, name: String, imageUrl: String, team: String, position: String, title: String, experience: String) {
+        self.MemberUid = uid
+        self.MemberName = name
+        self.MemberImageURL = imageUrl
+        self.MemberTeam = team
+        self.MemberPosition = position
+        self.MemberTitle = title
+        self.MemberExperience = experience
     }
     
     

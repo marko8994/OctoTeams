@@ -13,7 +13,7 @@ class MemberCell: UITableViewCell {
     @IBOutlet weak var memberNameLabel: UILabel!
     
     func setMember(member:TeamMember) {
-        memberNameLabel.text = member.name
+        memberNameLabel.text = member.MemberName
         
     }
     
