@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56200BE5215FFFB80087C2D7 /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A0E7C1215EFAF300904E08 /* MockData.json */; };
+		56446CFB217A4C510047E2BE /* LocalizableStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56446CFA217A4C510047E2BE /* LocalizableStrings.strings */; };
 		566F6AD0215D3A0100A268ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6ACF215D3A0100A268ED /* AppDelegate.swift */; };
-		566F6AD2215D3A0100A268ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6AD1215D3A0100A268ED /* ViewController.swift */; };
 		566F6AD5215D3A0100A268ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566F6AD3215D3A0100A268ED /* Main.storyboard */; };
 		566F6AD8215D3A0100A268ED /* OctoTeams.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 566F6AD6215D3A0100A268ED /* OctoTeams.xcdatamodeld */; };
 		566F6ADA215D3A0400A268ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566F6AD9215D3A0400A268ED /* Assets.xcassets */; };
 		566F6ADD215D3A0400A268ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566F6ADB215D3A0400A268ED /* LaunchScreen.storyboard */; };
 		566F6AE8215D3A0400A268ED /* OctoTeamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6AE7215D3A0400A268ED /* OctoTeamsTests.swift */; };
 		566F6AF3215D3A0400A268ED /* OctoTeamsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6AF2215D3A0400A268ED /* OctoTeamsUITests.swift */; };
+		566F6B03215D3FBB00A268ED /* OctoTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B02215D3FBB00A268ED /* OctoTeamViewController.swift */; };
+		566F6B05215D42BE00A268ED /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B04215D42BE00A268ED /* MemberCell.swift */; };
+		566F6B07215D443300A268ED /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B06215D443300A268ED /* TeamMember.swift */; };
+		56A0E7C3215EFD4400904E08 /* TeamMemberData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0E7C2215EFD4400904E08 /* TeamMemberData.swift */; };
+		56E62505217E2AFA00AD3DF5 /* MemberDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E62504217E2AFA00AD3DF5 /* MemberDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56446CFA217A4C510047E2BE /* LocalizableStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizableStrings.strings; sourceTree = "<group>"; };
 		566F6ACC215D3A0100A268ED /* OctoTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F6ACF215D3A0100A268ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		566F6AD1215D3A0100A268ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		566F6AD4215D3A0100A268ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566F6AD7215D3A0100A268ED /* OctoTeams.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OctoTeams.xcdatamodel; sourceTree = "<group>"; };
 		566F6AD9215D3A0400A268ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		566F6AEE215D3A0400A268ED /* OctoTeamsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoTeamsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F6AF2215D3A0400A268ED /* OctoTeamsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoTeamsUITests.swift; sourceTree = "<group>"; };
 		566F6AF4215D3A0400A268ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566F6B02215D3FBB00A268ED /* OctoTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoTeamViewController.swift; sourceTree = "<group>"; };
+		566F6B04215D42BE00A268ED /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
+		566F6B06215D443300A268ED /* TeamMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
+		56A0E7C1215EFAF300904E08 /* MockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
+		56A0E7C2215EFD4400904E08 /* TeamMemberData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberData.swift; sourceTree = "<group>"; };
+		56E62504217E2AFA00AD3DF5 /* MemberDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemberDetailsViewController.swift; path = ../MemberDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +111,14 @@
 		566F6ACE215D3A0100A268ED /* OctoTeams */ = {
 			isa = PBXGroup;
 			children = (
+				56A0E7C1215EFAF300904E08 /* MockData.json */,
 				566F6ACF215D3A0100A268ED /* AppDelegate.swift */,
-				566F6AD1215D3A0100A268ED /* ViewController.swift */,
+				566F6B02215D3FBB00A268ED /* OctoTeamViewController.swift */,
+				566F6B04215D42BE00A268ED /* MemberCell.swift */,
+				566F6B06215D443300A268ED /* TeamMember.swift */,
+				56A0E7C2215EFD4400904E08 /* TeamMemberData.swift */,
+				56E62504217E2AFA00AD3DF5 /* MemberDetailsViewController.swift */,
+				56446CFA217A4C510047E2BE /* LocalizableStrings.strings */,
 				566F6AD3215D3A0100A268ED /* Main.storyboard */,
 				566F6AD9215D3A0400A268ED /* Assets.xcassets */,
 				566F6ADB215D3A0400A268ED /* LaunchScreen.storyboard */,
@@ -233,8 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				566F6ADD215D3A0400A268ED /* LaunchScreen.storyboard in Resources */,
+				56200BE5215FFFB80087C2D7 /* MockData.json in Resources */,
 				566F6ADA215D3A0400A268ED /* Assets.xcassets in Resources */,
 				566F6AD5215D3A0100A268ED /* Main.storyboard in Resources */,
+				56446CFB217A4C510047E2BE /* LocalizableStrings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				566F6AD2215D3A0100A268ED /* ViewController.swift in Sources */,
 				566F6AD8215D3A0100A268ED /* OctoTeams.xcdatamodeld in Sources */,
 				566F6AD0215D3A0100A268ED /* AppDelegate.swift in Sources */,
+				56A0E7C3215EFD4400904E08 /* TeamMemberData.swift in Sources */,
+				56E62505217E2AFA00AD3DF5 /* MemberDetailsViewController.swift in Sources */,
+				566F6B03215D3FBB00A268ED /* OctoTeamViewController.swift in Sources */,
+				566F6B07215D443300A268ED /* TeamMember.swift in Sources */,
+				566F6B05215D42BE00A268ED /* MemberCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
