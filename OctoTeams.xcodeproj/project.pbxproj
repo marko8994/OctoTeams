@@ -214,13 +214,16 @@
 				TargetAttributes = {
 					566F6ACB215D3A0100A268ED = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					566F6AE2215D3A0400A268ED = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 566F6ACB215D3A0100A268ED;
 					};
 					566F6AED215D3A0400A268ED = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 566F6ACB215D3A0100A268ED;
 					};
 				};
@@ -467,7 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -485,7 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -504,7 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeamsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoTeams.app/OctoTeams";
 			};
@@ -524,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeamsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoTeams.app/OctoTeams";
 			};
@@ -543,7 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeamsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = OctoTeams;
 			};
@@ -562,7 +565,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeamsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = OctoTeams;
 			};
