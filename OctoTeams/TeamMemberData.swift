@@ -27,7 +27,7 @@ public class TeamMemberData {
             let loadedMembers = try decoder.decode([TeamMember].self, from: data)
             teamMembers = loadedMembers
         } catch let error {
-            print("Error parsing json", error)
+            print("Error parsing json:", error)
         }
     }
 }

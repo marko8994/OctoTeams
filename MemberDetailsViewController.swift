@@ -10,7 +10,7 @@ import UIKit
 
 class MemberDetailsViewController: UITableViewController {
 
-    var member: TeamMember?
+    var member: TeamMember!
     
     @IBOutlet weak var nameCell: UITableViewCell!
     @IBOutlet weak var teamCell: UITableViewCell!
@@ -22,8 +22,9 @@ class MemberDetailsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setPersonalInfo(member!)
-        setImage(member!.MemberImageURL!)
+        self.title = member.name
+        setPersonalInfo(member)
+        setImage(member.imageURL)
         memberInfo.tableFooterView = UIView(frame: CGRect.zero)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         memberImage.isUserInteractionEnabled = true
@@ -38,11 +39,11 @@ class MemberDetailsViewController: UITableViewController {
     }
 
     func setPersonalInfo(_ member: TeamMember){
-        nameCell.detailTextLabel?.text = member.MemberName
-        teamCell.detailTextLabel?.text = member.MemberTeam
-        titleCell.detailTextLabel?.text = member.MemberTitle
-        positionCell.detailTextLabel?.text = member.MemberPosition
-        experienceCell.detailTextLabel?.text = member.MemberExperience
+        nameCell.detailTextLabel?.text = member.name
+        teamCell.detailTextLabel?.text = member.team
+        titleCell.detailTextLabel?.text = member.title
+        positionCell.detailTextLabel?.text = member.position
+        experienceCell.detailTextLabel?.text = member.experience
         
     }
     

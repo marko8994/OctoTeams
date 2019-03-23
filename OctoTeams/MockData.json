@@ -1,67 +1,61 @@
 [
     {
-        "MemberUid": "0",
-        "MemberName": "Vojko Babic",
-        "MemberImageURL": "https://i.imgur.com/i7xiHxG.jpg",
-        "MemberTeam": "OIPI",
-        "MemberPosition": "Team leader",
-        "MemberTitle": "iOS Developer",
-        "MemberExperience": "8 yeays"
-        
+        "uid": "0",
+        "name": "Vojko Babic",
+        "imageURL": "https://i.imgur.com/i7xiHxG.jpg",
+        "team": "OIPI",
+        "position": "Team leader",
+        "title": "iOS Developer",
+        "experience": "8 yeays"
         },
     
     {
-        "MemberUid": "1",
-        "MemberName": "Branko Ivandekic",
-        "MemberImageURL": "https://i.imgur.com/i7xiHxG.jpg",
-        "MemberTeam": "OIPI",
-        "MemberPosition": "Team member",
-        "MemberTitle": "iOS Developer",
-        "MemberExperience": "6 yeays"
-        
+        "uid": "1",
+        "name": "Branko Ivandekic",
+        "imageURL": "https://i.imgur.com/i7xiHxG.jpg",
+        "team": "OIPI",
+        "position": "Team member",
+        "title": "iOS Developer",
+        "experience": "6 yeays"
     },
     
     {
-        "MemberUid": "2",
-        "MemberName": "Igor Drljic",
-        "MemberImageURL": "https://i.imgur.com/i7xiHxG.jpg",
-        "MemberTeam": "OIPI",
-        "MemberPosition": "Team member",
-        "MemberTitle": "iOS Developer",
-        "MemberExperience": "5 yeays"
-        
+        "uid": "2",
+        "name": "Igor Drljic",
+        "imageURL": "https://i.imgur.com/i7xiHxG.jpg",
+        "team": "OIPI",
+        "position": "Team member",
+        "title": "iOS Developer",
+        "experience": "5 yeays"
     },
     
     {
-        "MemberUid": "3",
-        "MemberName": "Jelena Lisica",
-        "MemberImageURL": "https://i.imgur.com/i7xiHxG.jpg",
-        "MemberTeam": "OIPI",
-        "MemberPosition": "Team member",
-        "MemberTitle": "QA Tester",
-        "MemberExperience": "1 year"
-        
+        "uid": "3",
+        "name": "Jelena Lisica",
+        "imageURL": "https://i.imgur.com/i7xiHxG.jpg",
+        "team": "OIPI",
+        "position": "Team member",
+        "title": "QA Tester",
+        "experience": "1 year"
     },
     
     {
-        "MemberUid": "4",
-        "MemberName": "Marko Mladenovic",
-        "MemberImageURL": "https://i.imgur.com/i7xiHxG.jpg",
-        "MemberTeam": "OIPI",
-        "MemberPosition": "Team member",
-        "MemberTitle": "QA Tester",
-        "MemberExperience": "1 year"
-        
+        "uid": "4",
+        "name": "Marko Mladenovic",
+        "imageURL": "https://i.imgur.com/i7xiHxG.jpg",
+        "team": "OIPI",
+        "position": "Team member",
+        "title": "QA Tester",
+        "experience": "1 year"
     },
     
     {
-        "MemberUid": "5",
-        "MemberName": "Sara Konstantinovic",
-        "MemberImageURL": "https://i.imgur.com/i7xiHxG.jpg",
-        "MemberTeam": "OIPI",
-        "MemberPosition": "Team member",
-        "MemberTitle": "QA Tester",
-        "MemberExperience": "1 year"
-        
+        "uid": "5",
+        "name": "Sara Konstantinovic",
+        "imageURL": "https://i.imgur.com/i7xiHxG.jpg",
+        "team": "OIPI",
+        "position": "Team member",
+        "title": "QA Tester",
+        "experience": "1 year"
     }
     ]
