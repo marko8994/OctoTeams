@@ -23,8 +23,7 @@ class MemberDetailsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = member.name
-        setPersonalInfo(member)
-        setImage(member.imageURL)
+        setPersonalInfo(for: member)
         memberInfo.tableFooterView = UIView(frame: CGRect.zero)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         memberImage.isUserInteractionEnabled = true
@@ -38,12 +37,15 @@ class MemberDetailsViewController: UITableViewController {
         memberImage.image = UIImage(data: data!)
     }
 
-    func setPersonalInfo(_ member: TeamMember){
+    func setPersonalInfo(for member: TeamMember){
         nameCell.detailTextLabel?.text = member.name
         teamCell.detailTextLabel?.text = member.team
         titleCell.detailTextLabel?.text = member.title
         positionCell.detailTextLabel?.text = member.position
         experienceCell.detailTextLabel?.text = member.experience
+        if let imageUrl = member.imageURL, let url = URL(string: imageUrl), let data = try? Data(contentsOf: url) {
+            memberImage.image = UIImage(data: data)
+        }
         
     }
     

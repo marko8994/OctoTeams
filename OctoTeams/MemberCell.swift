@@ -12,9 +12,13 @@ class MemberCell: UITableViewCell {
 
     @IBOutlet weak var memberNameLabel: UILabel!
     
-    func setMember(member:TeamMember) {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.accessoryType = .disclosureIndicator
+    }
+    
+    func configure(for member:TeamMember) {
         memberNameLabel.text = member.name
-        
     }
     
     

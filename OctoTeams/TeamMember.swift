@@ -12,7 +12,7 @@ public class TeamMember: Codable {
 
     var uid: String
     var name: String
-    var imageURL: String
+    var imageURL: String?
     var team: String
     var position: String
     var title: String
