@@ -20,9 +20,4 @@ class MemberCell: UITableViewCell {
     func configure(for member:TeamMember) {
         memberNameLabel.text = member.name
     }
-    
-    
-    
-    
-
 }
