@@ -10,6 +10,13 @@
 		55506EEA23E7273100DE3479 /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 55506EE923E7273100DE3479 /* Home.json */; };
 		55506EEC23E72C7F00DE3479 /* LightObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EEB23E72C7F00DE3479 /* LightObjects.swift */; };
 		55506EEF23E72F0E00DE3479 /* Dictionary+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EEE23E72F0E00DE3479 /* Dictionary+Keys.swift */; };
+		55506EF423E75B2700DE3479 /* BasicCollectionContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EF323E75B2700DE3479 /* BasicCollectionContainerCell.swift */; };
+		55506EF623E75B8900DE3479 /* BasicCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EF523E75B8900DE3479 /* BasicCollectionDataSource.swift */; };
+		55506EF823E75C2100DE3479 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EF723E75C2100DE3479 /* BasicCell.swift */; };
+		55506EFA23E75D0600DE3479 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EF923E75D0600DE3479 /* HomeViewController.swift */; };
+		55506EFC23E75EA400DE3479 /* BasicCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EFB23E75EA400DE3479 /* BasicCollectionCell.swift */; };
+		55506EFE23E7680700DE3479 /* BasicCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506EFD23E7680700DE3479 /* BasicCellInfo.swift */; };
+		55506F0123E7810700DE3479 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55506F0023E7810700DE3479 /* DeviceInfo.swift */; };
 		56200BE5215FFFB80087C2D7 /* team-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A0E7C1215EFAF300904E08 /* team-1.json */; };
 		56446CFB217A4C510047E2BE /* LocalizableStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56446CFA217A4C510047E2BE /* LocalizableStrings.strings */; };
 		566F6AD0215D3A0100A268ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6ACF215D3A0100A268ED /* AppDelegate.swift */; };
@@ -47,6 +54,13 @@
 		55506EE923E7273100DE3479 /* Home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 		55506EEB23E72C7F00DE3479 /* LightObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightObjects.swift; sourceTree = "<group>"; };
 		55506EEE23E72F0E00DE3479 /* Dictionary+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Keys.swift"; sourceTree = "<group>"; };
+		55506EF323E75B2700DE3479 /* BasicCollectionContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionContainerCell.swift; sourceTree = "<group>"; };
+		55506EF523E75B8900DE3479 /* BasicCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionDataSource.swift; sourceTree = "<group>"; };
+		55506EF723E75C2100DE3479 /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		55506EF923E75D0600DE3479 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55506EFB23E75EA400DE3479 /* BasicCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionCell.swift; sourceTree = "<group>"; };
+		55506EFD23E7680700DE3479 /* BasicCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCellInfo.swift; sourceTree = "<group>"; };
+		55506F0023E7810700DE3479 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		56446CFA217A4C510047E2BE /* LocalizableStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = LocalizableStrings.strings; sourceTree = "<group>"; };
 		566F6ACC215D3A0100A268ED /* OctoTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F6ACF215D3A0100A268ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,8 +121,10 @@
 		55506EE223E7240400DE3479 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				55506EF923E75D0600DE3479 /* HomeViewController.swift */,
 				566F6B02215D3FBB00A268ED /* OctoTeamViewController.swift */,
 				56E62504217E2AFA00AD3DF5 /* MemberDetailsViewController.swift */,
+				55506EF523E75B8900DE3479 /* BasicCollectionDataSource.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,7 +141,8 @@
 		55506EE423E7244A00DE3479 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				566F6B04215D42BE00A268ED /* MemberCell.swift */,
+				55506EF023E75AB600DE3479 /* Cells */,
+				566F6AD3215D3A0100A268ED /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,6 +162,25 @@
 				55506EEE23E72F0E00DE3479 /* Dictionary+Keys.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		55506EF023E75AB600DE3479 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				566F6B04215D42BE00A268ED /* MemberCell.swift */,
+				55506EF323E75B2700DE3479 /* BasicCollectionContainerCell.swift */,
+				55506EF723E75C2100DE3479 /* BasicCell.swift */,
+				55506EFB23E75EA400DE3479 /* BasicCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		55506EFF23E780F800DE3479 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55506F0023E7810700DE3479 /* DeviceInfo.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		566F6AC3215D3A0100A268ED = {
@@ -171,16 +207,17 @@
 			isa = PBXGroup;
 			children = (
 				566F6ACF215D3A0100A268ED /* AppDelegate.swift */,
-				566F6AD3215D3A0100A268ED /* Main.storyboard */,
 				566F6ADB215D3A0400A268ED /* LaunchScreen.storyboard */,
 				55506EE223E7240400DE3479 /* Controller */,
 				55506EE423E7244A00DE3479 /* View */,
+				55506EFF23E780F800DE3479 /* Helpers */,
 				55506EE123E723E300DE3479 /* MOCK Data */,
 				55506EE523E7246600DE3479 /* Response Objects */,
 				55506EED23E72EED00DE3479 /* Extensions */,
 				55506EE323E7241D00DE3479 /* Resources */,
 				566F6ADE215D3A0400A268ED /* Info.plist */,
 				566F6AD6215D3A0100A268ED /* OctoTeams.xcdatamodeld */,
+				55506EFD23E7680700DE3479 /* BasicCellInfo.swift */,
 			);
 			path = OctoTeams;
 			sourceTree = "<group>";
@@ -344,11 +381,18 @@
 				55506EEC23E72C7F00DE3479 /* LightObjects.swift in Sources */,
 				566F6AD0215D3A0100A268ED /* AppDelegate.swift in Sources */,
 				56A0E7C3215EFD4400904E08 /* MockData.swift in Sources */,
+				55506EF823E75C2100DE3479 /* BasicCell.swift in Sources */,
+				55506EF423E75B2700DE3479 /* BasicCollectionContainerCell.swift in Sources */,
 				56E62505217E2AFA00AD3DF5 /* MemberDetailsViewController.swift in Sources */,
+				55506F0123E7810700DE3479 /* DeviceInfo.swift in Sources */,
 				55506EEF23E72F0E00DE3479 /* Dictionary+Keys.swift in Sources */,
+				55506EFC23E75EA400DE3479 /* BasicCollectionCell.swift in Sources */,
+				55506EF623E75B8900DE3479 /* BasicCollectionDataSource.swift in Sources */,
 				566F6B03215D3FBB00A268ED /* OctoTeamViewController.swift in Sources */,
 				566F6B07215D443300A268ED /* TeamMember.swift in Sources */,
+				55506EFA23E75D0600DE3479 /* HomeViewController.swift in Sources */,
 				566F6B05215D42BE00A268ED /* MemberCell.swift in Sources */,
+				55506EFE23E7680700DE3479 /* BasicCellInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
