@@ -8,7 +8,7 @@
 
 import Foundation
 
-public typealias HomeData = (logo: String, description: String,
+public typealias HomeData = (logoUrl: String, description: String,
                             teams: [LightTeam], products: [LightProduct])
 
 public class MockData {
@@ -42,7 +42,7 @@ public class MockData {
             let description: String = try homeJsonData.valueForKey("Description")
             let teams: [LightTeam] = try homeJsonData.arrayForKey("Teams")
             let products: [LightProduct] = try homeJsonData.arrayForKey("Products")
-            return HomeData(logo: logoUrl, description: description,
+            return HomeData(logoUrl: logoUrl, description: description,
                             teams: teams, products: products)
             
         } catch let error {

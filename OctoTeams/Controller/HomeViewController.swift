@@ -22,13 +22,14 @@ class HomeViewController: UITableViewController {
         super.viewDidLoad()
         setupModel()
         setupCellInfos()
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     private func setupModel() {
         if let model = MockData.shared.fetchHome() {
             self.model = model
         } else {
-            model = HomeData(logo: "", description: "",
+            model = HomeData(logoUrl: "", description: "",
                              teams: [LightTeam](), products: [LightProduct]())
         }
     }
@@ -96,6 +97,23 @@ class HomeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 190.0
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0, let headerView = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as? HeaderView {
+            headerView.configure(text: model.description, imageUrl: model.logoUrl)
+            return headerView
+        } else {
+            return nil
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 240
+        } else {
+            return CGFloat.zero
+        }
     }
 }
 
