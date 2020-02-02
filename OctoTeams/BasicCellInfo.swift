@@ -13,15 +13,12 @@ public struct BasicCellInfo: BasicCellDataSource {
     public var userData: UserData?
     public var imageUrl: String?
     public var title: String?
-    public weak var actionDelegate: BasicCellActionDelegate?
 
     public init(userData: UserData? = nil,
                 imageUrl: String? = nil,
-                title: String? = nil,
-                actionDelegate: BasicCellActionDelegate? = nil) {
+                title: String? = nil) {
         self.userData = userData
         self.imageUrl = imageUrl
         self.title = title
-        self.actionDelegate = actionDelegate
     }
 }

@@ -37,16 +37,14 @@ class HomeViewController: UITableViewController {
         var teamCellInfos = [BasicCellInfo]()
         for team in model.teams {
             let userData = team.name
-            let cellInfo = BasicCellInfo(userData: userData, imageUrl: team.imageUrl,
-                                         title: team.name, actionDelegate: self)
+            let cellInfo = BasicCellInfo(userData: userData, imageUrl: team.imageUrl, title: team.name)
             teamCellInfos.append(cellInfo)
         }
         cellInfos[.teams] = teamCellInfos
         var productCellInfos = [BasicCellInfo]()
         for product in model.products {
             let userData = product.name
-            let cellInfo = BasicCellInfo(userData: userData, imageUrl: product.imageUrl,
-                                         title: product.name, actionDelegate: self)
+            let cellInfo = BasicCellInfo(userData: userData, imageUrl: product.imageUrl, title: product.name)
             productCellInfos.append(cellInfo)
         }
         cellInfos[.products] = productCellInfos
@@ -97,12 +95,8 @@ class HomeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 190.0
     }
-}
-
-extension HomeViewController: BasicCellActionDelegate {
-    
 }
 
 extension HomeViewController: BasicCollectionContainerActionDelegate {
