@@ -9,7 +9,8 @@
 import UIKit
 
 public enum HomeSection: Int {
-    case teams = 0
+    case spotlight = 0
+    case teams
     case products
 }
 
@@ -22,6 +23,7 @@ class HomeViewController: UITableViewController {
         super.viewDidLoad()
         setupModel()
         setupCellInfos()
+        self.title = "Telfor"
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
@@ -37,14 +39,14 @@ class HomeViewController: UITableViewController {
     private func setupCellInfos() {
         var teamCellInfos = [BasicCellInfo]()
         for team in model.teams {
-            let userData = team.name
+            let userData = (section: HomeSection.teams, teamUid: team.uid)
             let cellInfo = BasicCellInfo(userData: userData, imageUrl: team.imageUrl, title: team.name)
             teamCellInfos.append(cellInfo)
         }
         cellInfos[.teams] = teamCellInfos
         var productCellInfos = [BasicCellInfo]()
         for product in model.products {
-            let userData = product.name
+            let userData = (section: HomeSection.products, teamUid: product.uid)
             let cellInfo = BasicCellInfo(userData: userData, imageUrl: product.imageUrl, title: product.name)
             productCellInfos.append(cellInfo)
         }
@@ -71,7 +73,7 @@ class HomeViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -79,42 +81,33 @@ class HomeViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let reuseIdentifier = "basicCollectionContainerCell"
-        if let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? BasicCollectionContainerCell {
-            if indexPath.section ==  HomeSection.products.rawValue, let items = cellInfos[.products] {
-                cell.configure(items: items, actionDelegate: self)
-                setCollectionItemSize(forItems: items, cell: cell, indexPath: indexPath)
+        if let section = HomeSection(rawValue: indexPath.section) {
+            switch section {
+            case .spotlight:
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "tableHeaderCell",
+                                                               for: indexPath) as? HeaderCell {
+                cell.configure(text: model.description, imageUrl: model.logoUrl)
                 return cell
-            } else if indexPath.section == HomeSection.teams.rawValue, let items = cellInfos[.teams] {
-                cell.configure(items: items, actionDelegate: self)
-                setCollectionItemSize(forItems: items, cell: cell, indexPath: indexPath)
-                return cell
+                }
+            case .products, .teams:
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "basicCollectionContainerCell", for: indexPath) as? BasicCollectionContainerCell, let items = cellInfos[section] {
+                    cell.configure(items: items, actionDelegate: self)
+                    setCollectionItemSize(forItems: items, cell: cell, indexPath: indexPath)
+                    return cell
+                }
             }
-            
         }
-        fatalError("Could not find cell with identifier \(reuseIdentifier)")
+        fatalError("Could not find cell with set identifier")
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 190.0
-    }
-    
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 0, let headerView = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as? HeaderView {
-            headerView.configure(text: model.description, imageUrl: model.logoUrl)
-            return headerView
+        if HomeSection(rawValue: indexPath.section) == .spotlight {
+            return UITableView.automaticDimension
         } else {
-            return nil
+            return 190.0
         }
     }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0 {
-            return 240
-        } else {
-            return CGFloat.zero
-        }
-    }
+
 }
 
 extension HomeViewController: BasicCollectionContainerActionDelegate {

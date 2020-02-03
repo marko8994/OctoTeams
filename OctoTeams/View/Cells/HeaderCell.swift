@@ -1,5 +1,5 @@
 //
-//  HeaderView.swift
+//  HeaderCell.swift
 //  OctoTeams
 //
 //  Created by aleksa on 2/3/20.
@@ -8,16 +8,18 @@
 
 import UIKit
 
-class HeaderView: UIView {
-
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+class HeaderCell: UITableViewCell {
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var logoImageView: UIImageView!
+    
     
     public func configure(text: String, imageUrl: String) {
-        label.text = text
+        descriptionLabel.text = text
         if let imageUrl = URL(string: imageUrl),
             let imageData = try? Data(contentsOf: imageUrl) {
-            imageView.image = UIImage(data: imageData)
+            logoImageView.image = UIImage(data: imageData)
         }
     }
+
 }
