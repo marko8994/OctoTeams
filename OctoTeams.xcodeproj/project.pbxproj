@@ -27,11 +27,15 @@
 		566F6ADD215D3A0400A268ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566F6ADB215D3A0400A268ED /* LaunchScreen.storyboard */; };
 		566F6AE8215D3A0400A268ED /* OctoTeamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6AE7215D3A0400A268ED /* OctoTeamsTests.swift */; };
 		566F6AF3215D3A0400A268ED /* OctoTeamsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6AF2215D3A0400A268ED /* OctoTeamsUITests.swift */; };
-		566F6B03215D3FBB00A268ED /* OctoTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B02215D3FBB00A268ED /* OctoTeamViewController.swift */; };
-		566F6B05215D42BE00A268ED /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B04215D42BE00A268ED /* MemberCell.swift */; };
+		566F6B05215D42BE00A268ED /* BasicTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B04215D42BE00A268ED /* BasicTableCell.swift */; };
 		566F6B07215D443300A268ED /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566F6B06215D443300A268ED /* TeamMember.swift */; };
 		56A0E7C3215EFD4400904E08 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0E7C2215EFD4400904E08 /* MockData.swift */; };
 		56E62505217E2AFA00AD3DF5 /* MemberDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E62504217E2AFA00AD3DF5 /* MemberDetailsViewController.swift */; };
+		ADB25E7923E888E70090FE66 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25E7823E888E70090FE66 /* TeamDetailsViewController.swift */; };
+		ADB25E7B23E889C10090FE66 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB25E7A23E889C10090FE66 /* Team.swift */; };
+		ADB25E7F23E88BAC0090FE66 /* team-3.json in Resources */ = {isa = PBXBuildFile; fileRef = ADB25E7C23E88BAA0090FE66 /* team-3.json */; };
+		ADB25E8023E88BAC0090FE66 /* team-4.json in Resources */ = {isa = PBXBuildFile; fileRef = ADB25E7D23E88BAA0090FE66 /* team-4.json */; };
+		ADB25E8123E88BAC0090FE66 /* team-2.json in Resources */ = {isa = PBXBuildFile; fileRef = ADB25E7E23E88BAA0090FE66 /* team-2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +81,16 @@
 		566F6AEE215D3A0400A268ED /* OctoTeamsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoTeamsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F6AF2215D3A0400A268ED /* OctoTeamsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoTeamsUITests.swift; sourceTree = "<group>"; };
 		566F6AF4215D3A0400A268ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		566F6B02215D3FBB00A268ED /* OctoTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoTeamViewController.swift; sourceTree = "<group>"; };
-		566F6B04215D42BE00A268ED /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
+		566F6B04215D42BE00A268ED /* BasicTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableCell.swift; sourceTree = "<group>"; };
 		566F6B06215D443300A268ED /* TeamMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
 		56A0E7C1215EFAF300904E08 /* team-1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "team-1.json"; sourceTree = "<group>"; };
 		56A0E7C2215EFD4400904E08 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		56E62504217E2AFA00AD3DF5 /* MemberDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailsViewController.swift; sourceTree = "<group>"; };
+		ADB25E7823E888E70090FE66 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
+		ADB25E7A23E889C10090FE66 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		ADB25E7C23E88BAA0090FE66 /* team-3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team-3.json"; sourceTree = "<group>"; };
+		ADB25E7D23E88BAA0090FE66 /* team-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team-4.json"; sourceTree = "<group>"; };
+		ADB25E7E23E88BAA0090FE66 /* team-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "team-2.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				56A0E7C2215EFD4400904E08 /* MockData.swift */,
+				ADB25E7E23E88BAA0090FE66 /* team-2.json */,
+				ADB25E7C23E88BAA0090FE66 /* team-3.json */,
+				ADB25E7D23E88BAA0090FE66 /* team-4.json */,
 				55506EE923E7273100DE3479 /* Home.json */,
 				56A0E7C1215EFAF300904E08 /* team-1.json */,
 			);
@@ -124,9 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				55506EF923E75D0600DE3479 /* HomeViewController.swift */,
-				566F6B02215D3FBB00A268ED /* OctoTeamViewController.swift */,
 				56E62504217E2AFA00AD3DF5 /* MemberDetailsViewController.swift */,
 				55506EF523E75B8900DE3479 /* BasicCollectionDataSource.swift */,
+				ADB25E7823E888E70090FE66 /* TeamDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 			children = (
 				566F6B06215D443300A268ED /* TeamMember.swift */,
 				55506EEB23E72C7F00DE3479 /* LightObjects.swift */,
+				ADB25E7A23E889C10090FE66 /* Team.swift */,
 			);
 			path = "Response Objects";
 			sourceTree = "<group>";
@@ -169,7 +181,7 @@
 		55506EF023E75AB600DE3479 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				566F6B04215D42BE00A268ED /* MemberCell.swift */,
+				566F6B04215D42BE00A268ED /* BasicTableCell.swift */,
 				55506EF323E75B2700DE3479 /* BasicCollectionContainerCell.swift */,
 				55506EF723E75C2100DE3479 /* BasicCell.swift */,
 				55506EFB23E75EA400DE3479 /* BasicCollectionCell.swift */,
@@ -351,7 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				566F6ADD215D3A0400A268ED /* LaunchScreen.storyboard in Resources */,
+				ADB25E7F23E88BAC0090FE66 /* team-3.json in Resources */,
 				56200BE5215FFFB80087C2D7 /* team-1.json in Resources */,
+				ADB25E8123E88BAC0090FE66 /* team-2.json in Resources */,
+				ADB25E8023E88BAC0090FE66 /* team-4.json in Resources */,
 				55506EEA23E7273100DE3479 /* Home.json in Resources */,
 				566F6ADA215D3A0400A268ED /* Assets.xcassets in Resources */,
 				566F6AD5215D3A0100A268ED /* Main.storyboard in Resources */,
@@ -382,19 +397,20 @@
 			files = (
 				566F6AD8215D3A0100A268ED /* OctoTeams.xcdatamodeld in Sources */,
 				55506EEC23E72C7F00DE3479 /* LightObjects.swift in Sources */,
+				ADB25E7B23E889C10090FE66 /* Team.swift in Sources */,
 				566F6AD0215D3A0100A268ED /* AppDelegate.swift in Sources */,
 				56A0E7C3215EFD4400904E08 /* MockData.swift in Sources */,
 				55506EF823E75C2100DE3479 /* BasicCell.swift in Sources */,
 				55506EF423E75B2700DE3479 /* BasicCollectionContainerCell.swift in Sources */,
 				56E62505217E2AFA00AD3DF5 /* MemberDetailsViewController.swift in Sources */,
+				ADB25E7923E888E70090FE66 /* TeamDetailsViewController.swift in Sources */,
 				55506F0123E7810700DE3479 /* DeviceInfo.swift in Sources */,
 				55506EEF23E72F0E00DE3479 /* Dictionary+Keys.swift in Sources */,
 				55506EFC23E75EA400DE3479 /* BasicCollectionCell.swift in Sources */,
 				55506EF623E75B8900DE3479 /* BasicCollectionDataSource.swift in Sources */,
-				566F6B03215D3FBB00A268ED /* OctoTeamViewController.swift in Sources */,
 				566F6B07215D443300A268ED /* TeamMember.swift in Sources */,
 				55506EFA23E75D0600DE3479 /* HomeViewController.swift in Sources */,
-				566F6B05215D42BE00A268ED /* MemberCell.swift in Sources */,
+				566F6B05215D42BE00A268ED /* BasicTableCell.swift in Sources */,
 				55506F0723E7958700DE3479 /* HeaderCell.swift in Sources */,
 				55506EFE23E7680700DE3479 /* BasicCellInfo.swift in Sources */,
 			);

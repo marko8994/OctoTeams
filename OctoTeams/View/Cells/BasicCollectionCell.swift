@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import UIKit
 
 public class BasicCollectionCell: UICollectionViewCell, BasicCell {
 
@@ -22,6 +21,7 @@ public class BasicCollectionCell: UICollectionViewCell, BasicCell {
     public func configure(with info: BasicCellDataSource) {
         configureImageView(with: info)
         configureTitleLabel(with: info)
+        userData = info.userData
         self.actionDelegate = info.actionDelegate
         setNeedsLayout()
         layoutIfNeeded()
@@ -44,11 +44,8 @@ public class BasicCollectionCell: UICollectionViewCell, BasicCell {
     private func setLayout() {
         let cornerRadius: CGFloat = 5.0
         subviewsContainer?.layer.cornerRadius = cornerRadius
-//        backgroundColor = theme.backgroundColor
-//        subviewsContainer?.backgroundColor = theme.cellBackgroundColor
         layer.cornerRadius = cornerRadius
     }
-
 
     public override func awakeFromNib() {
         super.awakeFromNib()

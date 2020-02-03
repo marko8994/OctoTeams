@@ -14,7 +14,7 @@ extension Dictionary where Key == String, Value == Any? {
         if let value = self[key] as? ResultType {
             return value
         }
-        throw OCError.parsingError(message: "No value found for \(key)")
+        throw OCError.parsingError(message: "No value found for key: \(key)")
     }
     
     public func arrayForKey<ResultType: Deserializable>(_ key: String) throws -> [ResultType] {

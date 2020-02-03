@@ -46,7 +46,7 @@ class HomeViewController: UITableViewController {
         cellInfos[.teams] = teamCellInfos
         var productCellInfos = [BasicCellInfo]()
         for product in model.products {
-            let userData = (section: HomeSection.products, teamUid: product.uid)
+            let userData = (section: HomeSection.products, productUId: product.uid)
             let cellInfo = BasicCellInfo(userData: userData, imageUrl: product.imageUrl, title: product.name)
             productCellInfos.append(cellInfo)
         }
@@ -69,9 +69,15 @@ class HomeViewController: UITableViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "teamDetails", let teamDetailsVC = segue.destination as? TeamDetailsViewController,
+            let teamUid = sender as? String {
+            teamDetailsVC.teamUid = teamUid
+        }
+    }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -90,7 +96,9 @@ class HomeViewController: UITableViewController {
                 return cell
                 }
             case .products, .teams:
-                if let cell = tableView.dequeueReusableCell(withIdentifier: "basicCollectionContainerCell", for: indexPath) as? BasicCollectionContainerCell, let items = cellInfos[section] {
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "basicCollectionContainerCell",
+                                                            for: indexPath) as? BasicCollectionContainerCell,
+                    let items = cellInfos[section] {
                     cell.configure(items: items, actionDelegate: self)
                     setCollectionItemSize(forItems: items, cell: cell, indexPath: indexPath)
                     return cell
@@ -112,4 +120,15 @@ class HomeViewController: UITableViewController {
 
 extension HomeViewController: BasicCollectionContainerActionDelegate {
     
+    public func cell(_ cell: BasicCollectionContainerCell,
+                 collectionItemSelectedWithUserData userData: Any?) {
+        if let params = userData as? (HomeSection, String) {
+            if params.0 == .teams {
+                performSegue(withIdentifier: "teamDetails", sender: params.1)
+            } else if params.0 == .products {
+                return
+//                performSegue(withIdentifier: "productDetails", sender: params.1)
+            }
+        }
+    }
 }

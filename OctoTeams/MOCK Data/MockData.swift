@@ -20,9 +20,7 @@ public class MockData {
             print("Failed to locate mock data resources")
             return nil
         }
-        guard let data = try? Data(contentsOf: filepath,
-                                   options: Data.ReadingOptions.mappedIfSafe
-            ) else {return nil}
+        guard let data = try? Data(contentsOf: filepath, options: Data.ReadingOptions.mappedIfSafe) else {return nil}
         do {
             let jsonObject = try JSONSerialization.jsonObject(with: data,
                                                               options: [.mutableContainers])
@@ -47,6 +45,19 @@ public class MockData {
             
         } catch let error {
             print("Error during fetching home data with error: \(error)")
+            return nil
+        }
+    }
+    
+    public func fetchTeam(with uid: String) -> Team? {
+        guard let teamJsonData = loadJSONData(from: uid) as? Parameters else {
+            return nil
+        }
+        do {
+            let team = try Team(dictionary: teamJsonData)
+            return team
+        } catch let error {
+            print("Error during fetching team data with error: \(error)")
             return nil
         }
     }
