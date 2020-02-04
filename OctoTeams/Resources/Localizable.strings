@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  OctoTeams
+
+  Created by Marko Mladenovic on 2/3/20.
+  Copyright © 2020 Grne Dev. All rights reserved.
+*/
+
+"Title.PersonalInfo" = "Personal info";
+"Title.ProductInfo" = "Product info";
+"Common.Name" = "Name";
+"Common.Team" = "Team";
+"Common.Position" = "Position";
+"Common.Occupation" = "Occupation";
+"Common.Price" = "Price";
+"Common.Cuurency.Euro" = "euro";
+"Common.Currency.Euros" = "euros";
+"Common.Experience" = "Years of experience";

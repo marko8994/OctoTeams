@@ -61,4 +61,17 @@ public class MockData {
             return nil
         }
     }
+    
+    public func fetchProduct(with uid: String) -> Product? {
+        guard let teamJsonData = loadJSONData(from: uid) as? Parameters else {
+            return nil
+        }
+        do {
+            let product = try Product(dictionary: teamJsonData)
+            return product
+        } catch let error {
+            print("Error during fetching product data with error: \(error)")
+            return nil
+        }
+    }
 }

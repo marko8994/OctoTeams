@@ -18,26 +18,23 @@ class MemberDetailsViewController: UITableViewController {
     @IBOutlet weak var titleCell: UITableViewCell!
     @IBOutlet weak var experienceCell: UITableViewCell!
     @IBOutlet weak var memberImage: UIImageView!
-    @IBOutlet var memberInfo: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = member.name
-        setPersonalInfo(for: member)
-        memberInfo.tableFooterView = UIView(frame: CGRect.zero)
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        memberImage.isUserInteractionEnabled = true
-        memberImage.addGestureRecognizer(tapGestureRecognizer)
-        memberInfo.reloadData()
+        setUpLabels()
+        setUpPersonalInfo()
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
-    func setImage(_ imageURL: String) {
-        let url = URL(string: imageURL)
-        let data = try? Data(contentsOf: url!)
-        memberImage.image = UIImage(data: data!)
+    private func setUpLabels() {
+        nameCell.textLabel?.text = NSLocalizedString("Common.Name", comment: "")
+        titleCell.textLabel?.text = NSLocalizedString("Common.Occupation", comment: "")
+        positionCell.textLabel?.text = NSLocalizedString("Common.Position", comment: "")
+        experienceCell.textLabel?.text = NSLocalizedString("Common.Experience", comment: "")
     }
 
-    func setPersonalInfo(for member: TeamMember){
+    private func setUpPersonalInfo(){
+        navigationItem.title = member.name
         nameCell.detailTextLabel?.text = member.name
         titleCell.detailTextLabel?.text = member.title
         positionCell.detailTextLabel?.text = member.position
@@ -45,7 +42,12 @@ class MemberDetailsViewController: UITableViewController {
         if let url = URL(string: member.imageURL), let data = try? Data(contentsOf: url) {
             memberImage.image = UIImage(data: data)
         }
-        
+    }
+    
+    private func setUpGestureRecognizer() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        memberImage.isUserInteractionEnabled = true
+        memberImage.addGestureRecognizer(tapGestureRecognizer)
     }
     
     @IBAction func imageTapped(sender: UITapGestureRecognizer) {
@@ -70,6 +72,6 @@ class MemberDetailsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int ) -> String? {
-        return "Personal info"
+        return NSLocalizedString("Title.PersonalInfo", comment: "")
     }
 }

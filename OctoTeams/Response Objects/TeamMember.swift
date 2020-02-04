@@ -16,7 +16,6 @@ public protocol Deserializable {
 
 public enum OCError: Error {
     case parsingError(message: String)
-    
 }
 
 public struct TeamMember: Deserializable {

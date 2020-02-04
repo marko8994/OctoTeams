@@ -74,6 +74,10 @@ class HomeViewController: UITableViewController {
         if segue.identifier == "teamDetails", let teamDetailsVC = segue.destination as? TeamDetailsViewController,
             let teamUid = sender as? String {
             teamDetailsVC.teamUid = teamUid
+        } else if segue.identifier == "productDetails",
+            let productDetailsVC = segue.destination as? ProductDetailsViewController,
+            let productUid = sender as? String {
+            productDetailsVC.productUid = productUid
         }
     }
 
@@ -126,8 +130,7 @@ extension HomeViewController: BasicCollectionContainerActionDelegate {
             if params.0 == .teams {
                 performSegue(withIdentifier: "teamDetails", sender: params.1)
             } else if params.0 == .products {
-                return
-//                performSegue(withIdentifier: "productDetails", sender: params.1)
+                performSegue(withIdentifier: "productDetails", sender: params.1)
             }
         }
     }
