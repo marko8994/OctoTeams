@@ -73,17 +73,17 @@
 		55506EFD23E7680700DE3479 /* BasicCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCellInfo.swift; sourceTree = "<group>"; };
 		55506F0023E7810700DE3479 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		55506F0623E7958700DE3479 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		566F6ACC215D3A0100A268ED /* OctoTeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OctoTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		566F6ACC215D3A0100A268ED /* Octo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F6ACF215D3A0100A268ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		566F6AD4215D3A0100A268ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566F6AD7215D3A0100A268ED /* OctoTeams.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OctoTeams.xcdatamodel; sourceTree = "<group>"; };
 		566F6AD9215D3A0400A268ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566F6ADC215D3A0400A268ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		566F6ADE215D3A0400A268ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		566F6AE3215D3A0400A268ED /* OctoTeamsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoTeamsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566F6AE3215D3A0400A268ED /* OctoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F6AE7215D3A0400A268ED /* OctoTeamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoTeamsTests.swift; sourceTree = "<group>"; };
 		566F6AE9215D3A0400A268ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		566F6AEE215D3A0400A268ED /* OctoTeamsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoTeamsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566F6AEE215D3A0400A268ED /* OctoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F6AF2215D3A0400A268ED /* OctoTeamsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoTeamsUITests.swift; sourceTree = "<group>"; };
 		566F6AF4215D3A0400A268ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		566F6B04215D42BE00A268ED /* BasicTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableCell.swift; sourceTree = "<group>"; };
@@ -134,15 +134,15 @@
 			isa = PBXGroup;
 			children = (
 				56A0E7C2215EFD4400904E08 /* MockData.swift */,
+				55506EE923E7273100DE3479 /* Home.json */,
 				ADDB169E23E9E5CC000EF2A0 /* product-1.json */,
 				ADDB169B23E9E5CB000EF2A0 /* product-2.json */,
 				ADDB169C23E9E5CC000EF2A0 /* product-3.json */,
 				ADDB169D23E9E5CC000EF2A0 /* product-4.json */,
+				56A0E7C1215EFAF300904E08 /* team-1.json */,
 				ADB25E7E23E88BAA0090FE66 /* team-2.json */,
 				ADB25E7C23E88BAA0090FE66 /* team-3.json */,
 				ADB25E7D23E88BAA0090FE66 /* team-4.json */,
-				55506EE923E7273100DE3479 /* Home.json */,
-				56A0E7C1215EFAF300904E08 /* team-1.json */,
 			);
 			path = "MOCK Data";
 			sourceTree = "<group>";
@@ -229,9 +229,9 @@
 		566F6ACD215D3A0100A268ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				566F6ACC215D3A0100A268ED /* OctoTeams.app */,
-				566F6AE3215D3A0400A268ED /* OctoTeamsTests.xctest */,
-				566F6AEE215D3A0400A268ED /* OctoTeamsUITests.xctest */,
+				566F6ACC215D3A0100A268ED /* Octo.app */,
+				566F6AE3215D3A0400A268ED /* OctoTests.xctest */,
+				566F6AEE215D3A0400A268ED /* OctoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		566F6ACB215D3A0100A268ED /* OctoTeams */ = {
+		566F6ACB215D3A0100A268ED /* Octo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566F6AF7215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTeams" */;
+			buildConfigurationList = 566F6AF7215D3A0400A268ED /* Build configuration list for PBXNativeTarget "Octo" */;
 			buildPhases = (
 				566F6AC8215D3A0100A268ED /* Sources */,
 				566F6AC9215D3A0100A268ED /* Frameworks */,
@@ -288,14 +288,14 @@
 			);
 			dependencies = (
 			);
-			name = OctoTeams;
+			name = Octo;
 			productName = OctoTeams;
-			productReference = 566F6ACC215D3A0100A268ED /* OctoTeams.app */;
+			productReference = 566F6ACC215D3A0100A268ED /* Octo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		566F6AE2215D3A0400A268ED /* OctoTeamsTests */ = {
+		566F6AE2215D3A0400A268ED /* OctoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566F6AFA215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTeamsTests" */;
+			buildConfigurationList = 566F6AFA215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTests" */;
 			buildPhases = (
 				566F6ADF215D3A0400A268ED /* Sources */,
 				566F6AE0215D3A0400A268ED /* Frameworks */,
@@ -306,14 +306,14 @@
 			dependencies = (
 				566F6AE5215D3A0400A268ED /* PBXTargetDependency */,
 			);
-			name = OctoTeamsTests;
+			name = OctoTests;
 			productName = OctoTeamsTests;
-			productReference = 566F6AE3215D3A0400A268ED /* OctoTeamsTests.xctest */;
+			productReference = 566F6AE3215D3A0400A268ED /* OctoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		566F6AED215D3A0400A268ED /* OctoTeamsUITests */ = {
+		566F6AED215D3A0400A268ED /* OctoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566F6AFD215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTeamsUITests" */;
+			buildConfigurationList = 566F6AFD215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoUITests" */;
 			buildPhases = (
 				566F6AEA215D3A0400A268ED /* Sources */,
 				566F6AEB215D3A0400A268ED /* Frameworks */,
@@ -324,9 +324,9 @@
 			dependencies = (
 				566F6AF0215D3A0400A268ED /* PBXTargetDependency */,
 			);
-			name = OctoTeamsUITests;
+			name = OctoUITests;
 			productName = OctoTeamsUITests;
-			productReference = 566F6AEE215D3A0400A268ED /* OctoTeamsUITests.xctest */;
+			productReference = 566F6AEE215D3A0400A268ED /* OctoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -355,7 +355,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 566F6AC7215D3A0100A268ED /* Build configuration list for PBXProject "OctoTeams" */;
+			buildConfigurationList = 566F6AC7215D3A0100A268ED /* Build configuration list for PBXProject "Octo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -368,9 +368,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				566F6ACB215D3A0100A268ED /* OctoTeams */,
-				566F6AE2215D3A0400A268ED /* OctoTeamsTests */,
-				566F6AED215D3A0400A268ED /* OctoTeamsUITests */,
+				566F6ACB215D3A0100A268ED /* Octo */,
+				566F6AE2215D3A0400A268ED /* OctoTests */,
+				566F6AED215D3A0400A268ED /* OctoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -461,12 +461,12 @@
 /* Begin PBXTargetDependency section */
 		566F6AE5215D3A0400A268ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 566F6ACB215D3A0100A268ED /* OctoTeams */;
+			target = 566F6ACB215D3A0100A268ED /* Octo */;
 			targetProxy = 566F6AE4215D3A0400A268ED /* PBXContainerItemProxy */;
 		};
 		566F6AF0215D3A0400A268ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 566F6ACB215D3A0100A268ED /* OctoTeams */;
+			target = 566F6ACB215D3A0100A268ED /* Octo */;
 			targetProxy = 566F6AEF215D3A0400A268ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -616,8 +616,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeams;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.Octo;
+				PRODUCT_NAME = Octo;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -634,8 +634,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.OctoTeams;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grnedev.Octo;
+				PRODUCT_NAME = Octo;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -657,7 +657,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoTeams.app/OctoTeams";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octo.app/Octo";
 			};
 			name = Debug;
 		};
@@ -677,7 +677,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OctoTeams.app/OctoTeams";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octo.app/Octo";
 			};
 			name = Release;
 		};
@@ -722,7 +722,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		566F6AC7215D3A0100A268ED /* Build configuration list for PBXProject "OctoTeams" */ = {
+		566F6AC7215D3A0100A268ED /* Build configuration list for PBXProject "Octo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566F6AF5215D3A0400A268ED /* Debug */,
@@ -731,7 +731,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566F6AF7215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTeams" */ = {
+		566F6AF7215D3A0400A268ED /* Build configuration list for PBXNativeTarget "Octo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566F6AF8215D3A0400A268ED /* Debug */,
@@ -740,7 +740,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566F6AFA215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTeamsTests" */ = {
+		566F6AFA215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566F6AFB215D3A0400A268ED /* Debug */,
@@ -749,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566F6AFD215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoTeamsUITests" */ = {
+		566F6AFD215D3A0400A268ED /* Build configuration list for PBXNativeTarget "OctoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566F6AFE215D3A0400A268ED /* Debug */,

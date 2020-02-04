@@ -23,7 +23,7 @@ class HomeViewController: UITableViewController {
         super.viewDidLoad()
         setupModel()
         setupCellInfos()
-        self.title = "Telfor"
+        self.title = "Octo"
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
