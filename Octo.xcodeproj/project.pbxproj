@@ -219,9 +219,9 @@
 		566F6AC3215D3A0100A268ED = {
 			isa = PBXGroup;
 			children = (
-				566F6ACE215D3A0100A268ED /* OctoTeams */,
-				566F6AE6215D3A0400A268ED /* OctoTeamsTests */,
-				566F6AF1215D3A0400A268ED /* OctoTeamsUITests */,
+				566F6ACE215D3A0100A268ED /* Octo */,
+				566F6AE6215D3A0400A268ED /* OctoTests */,
+				566F6AF1215D3A0400A268ED /* OctoUITests */,
 				566F6ACD215D3A0100A268ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		566F6ACE215D3A0100A268ED /* OctoTeams */ = {
+		566F6ACE215D3A0100A268ED /* Octo */ = {
 			isa = PBXGroup;
 			children = (
 				566F6ACF215D3A0100A268ED /* AppDelegate.swift */,
@@ -252,25 +252,25 @@
 				566F6AD6215D3A0100A268ED /* OctoTeams.xcdatamodeld */,
 				55506EFD23E7680700DE3479 /* BasicCellInfo.swift */,
 			);
-			path = OctoTeams;
+			path = Octo;
 			sourceTree = "<group>";
 		};
-		566F6AE6215D3A0400A268ED /* OctoTeamsTests */ = {
+		566F6AE6215D3A0400A268ED /* OctoTests */ = {
 			isa = PBXGroup;
 			children = (
 				566F6AE7215D3A0400A268ED /* OctoTeamsTests.swift */,
 				566F6AE9215D3A0400A268ED /* Info.plist */,
 			);
-			path = OctoTeamsTests;
+			path = OctoTests;
 			sourceTree = "<group>";
 		};
-		566F6AF1215D3A0400A268ED /* OctoTeamsUITests */ = {
+		566F6AF1215D3A0400A268ED /* OctoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				566F6AF2215D3A0400A268ED /* OctoTeamsUITests.swift */,
 				566F6AF4215D3A0400A268ED /* Info.plist */,
 			);
-			path = OctoTeamsUITests;
+			path = OctoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -611,7 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SA3L24LXCA;
-				INFOPLIST_FILE = OctoTeams/Info.plist;
+				INFOPLIST_FILE = Octo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -629,7 +629,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SA3L24LXCA;
-				INFOPLIST_FILE = OctoTeams/Info.plist;
+				INFOPLIST_FILE = Octo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
