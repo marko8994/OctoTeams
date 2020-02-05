@@ -42,9 +42,10 @@ public class BasicCollectionCell: UICollectionViewCell, BasicCell {
     }
 
     private func setLayout() {
-        let cornerRadius: CGFloat = 5.0
+        let cornerRadius: CGFloat = 10.0
         subviewsContainer?.layer.cornerRadius = cornerRadius
         layer.cornerRadius = cornerRadius
+        subviewsContainer?.backgroundColor = UIColor.lightGray
     }
 
     public override func awakeFromNib() {
