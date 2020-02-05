@@ -23,6 +23,7 @@ class MemberDetailsViewController: UITableViewController {
         super.viewDidLoad()
         setUpLabels()
         setUpPersonalInfo()
+        setUpGestureRecognizer()
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     

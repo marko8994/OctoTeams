@@ -8,6 +8,11 @@
 
 "Title.PersonalInfo" = "Personal info";
 "Title.ProductInfo" = "Product info";
+"Common.SectionTitle.AboutCompany" = "About company";
+"Common.SectionTitle.Teams" = "Teams";
+"Common.SectionTitle.Products" = "Products";
+"Common.SectionTitle.AboutTeam" = "About team";
+"Common.SectionTitle.Members" = "Members";
 "Common.Name" = "Name";
 "Common.Team" = "Team";
 "Common.Position" = "Position";

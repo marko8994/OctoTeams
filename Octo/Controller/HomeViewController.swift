@@ -9,7 +9,7 @@
 import UIKit
 
 public enum HomeSection: Int {
-    case spotlight = 0
+    case description = 0
     case teams
     case products
 }
@@ -23,7 +23,8 @@ class HomeViewController: UITableViewController {
         super.viewDidLoad()
         setupModel()
         setupCellInfos()
-        self.title = "Octo"
+        setUpHeaderView()
+        self.navigationItem.title = "Octo"
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
@@ -33,6 +34,16 @@ class HomeViewController: UITableViewController {
         } else {
             model = HomeData(logoUrl: "", description: "",
                              teams: [LightTeam](), products: [LightProduct]())
+        }
+    }
+    
+    private func setUpHeaderView() {
+        if let spotlight = Bundle.main.loadNibNamed("SpotlightView",
+                                                    owner: self,
+                                                    options: nil)?.first as? SpotlightView {
+            spotlight.configure(imageUrl: model.logoUrl)
+            tableView.tableHeaderView = spotlight
+            self.tableView.tableHeaderView = self.tableView.tableHeaderView
         }
     }
     
@@ -93,11 +104,10 @@ class HomeViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let section = HomeSection(rawValue: indexPath.section) {
             switch section {
-            case .spotlight:
-                if let cell = tableView.dequeueReusableCell(withIdentifier: "tableHeaderCell",
-                                                               for: indexPath) as? HeaderCell {
-                cell.configure(text: model.description, imageUrl: model.logoUrl)
-                return cell
+            case .description:
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "descriptionCell") {
+                    cell.textLabel?.text = model.description
+                    return cell
                 }
             case .products, .teams:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "basicCollectionContainerCell",
@@ -112,8 +122,23 @@ class HomeViewController: UITableViewController {
         fatalError("Could not find cell with set identifier")
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let section = HomeSection(rawValue: section) {
+            switch section {
+            case .description:
+                return NSLocalizedString("Common.SectionTitle.AboutCompany", comment: "")
+            case .teams:
+                return NSLocalizedString("Common.SectionTitle.Teams", comment: "")
+            case .products:
+                return NSLocalizedString("Common.SectionTitle.Products", comment: "")
+            }
+        } else {
+            return nil
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if HomeSection(rawValue: indexPath.section) == .spotlight {
+        if HomeSection(rawValue: indexPath.section) == .description {
             return UITableView.automaticDimension
         } else {
             return 190.0

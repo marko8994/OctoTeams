@@ -42,6 +42,8 @@
 		ADDB16A123E9E5CC000EF2A0 /* product-4.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDB169D23E9E5CC000EF2A0 /* product-4.json */; };
 		ADDB16A223E9E5CC000EF2A0 /* product-1.json in Resources */ = {isa = PBXBuildFile; fileRef = ADDB169E23E9E5CC000EF2A0 /* product-1.json */; };
 		ADDB16A423E9E5F3000EF2A0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB16A323E9E5F3000EF2A0 /* Product.swift */; };
+		ADDB16A623EB2E81000EF2A0 /* SpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB16A523EB2E81000EF2A0 /* SpotlightView.swift */; };
+		ADDB16A823EB2E96000EF2A0 /* SpotlightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDB16A723EB2E96000EF2A0 /* SpotlightView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		ADDB169D23E9E5CC000EF2A0 /* product-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "product-4.json"; sourceTree = "<group>"; };
 		ADDB169E23E9E5CC000EF2A0 /* product-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "product-1.json"; sourceTree = "<group>"; };
 		ADDB16A323E9E5F3000EF2A0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		ADDB16A523EB2E81000EF2A0 /* SpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightView.swift; sourceTree = "<group>"; };
+		ADDB16A723EB2E96000EF2A0 /* SpotlightView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpotlightView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +175,10 @@
 		55506EE423E7244A00DE3479 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				55506EF023E75AB600DE3479 /* Cells */,
 				566F6AD3215D3A0100A268ED /* Main.storyboard */,
+				55506EF023E75AB600DE3479 /* Cells */,
+				ADDB16A523EB2E81000EF2A0 /* SpotlightView.swift */,
+				ADDB16A723EB2E96000EF2A0 /* SpotlightView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -387,6 +393,7 @@
 				56200BE5215FFFB80087C2D7 /* team-1.json in Resources */,
 				ADDB16A223E9E5CC000EF2A0 /* product-1.json in Resources */,
 				ADB25E8123E88BAC0090FE66 /* team-2.json in Resources */,
+				ADDB16A823EB2E96000EF2A0 /* SpotlightView.xib in Resources */,
 				ADB25E8323E8A0350090FE66 /* Localizable.strings in Resources */,
 				ADB25E8023E88BAC0090FE66 /* team-4.json in Resources */,
 				55506EEA23E7273100DE3479 /* Home.json in Resources */,
@@ -434,6 +441,7 @@
 				566F6B07215D443300A268ED /* TeamMember.swift in Sources */,
 				55506EFA23E75D0600DE3479 /* HomeViewController.swift in Sources */,
 				566F6B05215D42BE00A268ED /* BasicTableCell.swift in Sources */,
+				ADDB16A623EB2E81000EF2A0 /* SpotlightView.swift in Sources */,
 				ADDB16A423E9E5F3000EF2A0 /* Product.swift in Sources */,
 				55506F0723E7958700DE3479 /* HeaderCell.swift in Sources */,
 				55506EFE23E7680700DE3479 /* BasicCellInfo.swift in Sources */,
