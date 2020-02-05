@@ -35,13 +35,13 @@
       "ImageURL": "https://i.imgur.com/i7xiHxG.jpg"
     },
     {
-      "UID": "Product three",
-      "Name": "",
+      "UID": "product-3",
+      "Name": "Product Three",
       "ImageURL": "https://i.imgur.com/i7xiHxG.jpg"
     },
     {
-      "UID": "Product 4",
-      "Name": "Octopus",
+      "UID": "product-4",
+      "Name": "Product Four",
       "ImageURL": "https://i.imgur.com/i7xiHxG.jpg"
     }
   ]

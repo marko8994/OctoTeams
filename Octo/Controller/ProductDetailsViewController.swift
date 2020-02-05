@@ -53,7 +53,7 @@ class ProductDetailsViewController: UITableViewController {
         } else {
             priceCurrency = NSLocalizedString("Common.Currency.Euros", comment: "")
         }
-        priceCell.detailTextLabel?.text = String(product.price) + priceCurrency
+        priceCell.detailTextLabel?.text = String(product.price) + " " + priceCurrency
     }
     
     private func setUpGestureRecognizer() {

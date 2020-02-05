@@ -1,7 +1,7 @@
 {
-  "UID": "product-4",
-  "Name": "Product 4",
+  "UID": "product-3",
+  "Name": "Product Four",
   "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   "ImageURL": "https://i.imgur.com/i7xiHxG.jpg",
-  "Price": 20
+  "Price": 25
 }
